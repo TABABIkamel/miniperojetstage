@@ -22,8 +22,8 @@ public class CategorieTest {
         var categorie = new Categorie("cat1",40);
         icategorieservice.AjoutCategorie(categorie);
     }
-    @Test
-    public void TestSupprimerCategorie() {
-        icategorieservice.SupprimerCategorie(12L);
-    }
+    //@Test
+    //public void TestSupprimerCategorie() {
+      //  icategorieservice.SupprimerCategorie(18L);
+    //}
 }
