@@ -11,6 +11,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+
+import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -18,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
+@Data
 public class Categorie implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
@@ -51,42 +54,7 @@ public class Categorie implements Serializable {
 		this.quantite = quantite;
 	}
 
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getNom() {
-		return nom;
-	}
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-	public int getQuantite() {
-		return quantite;
-	}
-	public void setQuantite(int quantite) {
-		this.quantite = quantite;
-	}
-	public Timestamp getRegdate() {
-		return regdate;
-	}
-	public void setRegdate(Timestamp regdate) {
-		this.regdate = regdate;
-	}
-	public Timestamp getUpdatedate() {
-		return updatedate;
-	}
-	public void setUpdatedate(Timestamp updatedate) {
-		this.updatedate = updatedate;
-	}
-	public Set<Produit> getProduit() {
-		return produit;
-	}
-	public void setProduit(Set<Produit> produit) {
-		this.produit = produit;
-	}
+
 	
 	
 	
