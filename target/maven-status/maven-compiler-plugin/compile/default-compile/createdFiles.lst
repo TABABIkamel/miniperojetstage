@@ -1,0 +1,15 @@
+com\miniProject\app\ws\services\CategorieService.class
+com\miniProject\app\ws\entities\Categorie.class
+com\miniProject\app\ws\entities\Produit.class
+com\miniProject\app\ws\repositories\ICategorieRepository.class
+com\miniProject\app\ws\controllers\export\ExportPdf.class
+com\miniProject\app\ws\DTO\ProduitDTO.class
+com\miniProject\app\ws\services\IProduitService.class
+com\miniProject\app\ws\Application.class
+com\miniProject\app\ws\services\ICategorieService.class
+com\miniProject\app\ws\controllers\export\ExportExcel.class
+com\miniProject\app\ws\services\ProduitService.class
+com\miniProject\app\ws\controllers\ProductController.class
+com\miniProject\app\ws\DTO\CategorieDTO.class
+com\miniProject\app\ws\repositories\IProductRepository.class
+com\miniProject\app\ws\controllers\CategorieController.class
