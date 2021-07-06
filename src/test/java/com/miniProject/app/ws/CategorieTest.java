@@ -22,12 +22,12 @@ public class CategorieTest {
         var categorie = new Categorie("cat1",40);
         icategorieservice.AjoutCategorie(categorie);
     }
-    @Test
+   /* @Test
     public void TestSupprimerCategorie() { icategorieservice.SupprimerCategorie(20L);
     }
     @Test
     public void TestModifierCategorie() {
         var categorie = new Categorie("cat1",40);
         icategorieservice.ModifierCategorie(categorie);
-    }
+    }*/
 }
