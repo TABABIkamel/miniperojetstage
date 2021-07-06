@@ -2,5 +2,5 @@ projectKey=com.miniProject.app.ws:miniProject.app.ws
 serverUrl=http://localhost:9000
 serverVersion=8.9.1.44547
 dashboardUrl=http://localhost:9000/dashboard?id=com.miniProject.app.ws%3AminiProject.app.ws
-ceTaskId=AXpxeOHN9UqhGwHPkzZk
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXpxeOHN9UqhGwHPkzZk
+ceTaskId=AXp3Rj9D55aq4cAZ-tFf
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXp3Rj9D55aq4cAZ-tFf

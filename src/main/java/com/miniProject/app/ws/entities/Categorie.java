@@ -2,21 +2,14 @@ package com.miniProject.app.ws.entities;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.Set;
+import java.util.List;
+import javax.persistence.*;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
@@ -29,13 +22,15 @@ public class Categorie implements Serializable {
 	private String nom;
 	private int quantite=0;
 	@CreationTimestamp
+	@Column(nullable = false, updatable = false)
     private Timestamp regdate;
     @UpdateTimestamp
+	@Column(nullable = true, updatable = true)
     private Timestamp updatedate;
     @JsonIgnore
     @JsonManagedReference
     @OneToMany(cascade=CascadeType.ALL,fetch=FetchType.LAZY,mappedBy="categorie")
-    private Set<Produit> produit;
+    private List<Produit> produit;
     
 	public Categorie() {
 		super();

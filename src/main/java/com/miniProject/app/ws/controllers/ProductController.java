@@ -7,6 +7,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
 import com.miniProject.app.ws.DTO.ProduitDTO;
+import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,7 @@ import com.miniProject.app.ws.services.IProduitService;
 
 @RestController
 @RequestMapping("/Product")
+@AllArgsConstructor
 public class ProductController {
 	@Autowired
 	IProduitService prodServ;

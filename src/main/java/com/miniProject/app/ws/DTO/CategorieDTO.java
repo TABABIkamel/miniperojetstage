@@ -2,8 +2,10 @@ package com.miniProject.app.ws.DTO;
 
 
 
-import java.sql.Timestamp;
+import lombok.Data;
 
+import java.sql.Timestamp;
+@Data
 public class CategorieDTO {
     private Long id;
     private String nomCategorie;
@@ -22,43 +24,4 @@ public class CategorieDTO {
     public CategorieDTO() {
     }
 
-    public String getNomCategorie() {
-        return nomCategorie;
-    }
-
-    public void setNomCategorie(String nomCategorie) {
-        this.nomCategorie = nomCategorie;
-    }
-
-    public int getQuantiteCategorie() {
-        return quantiteCategorie;
-    }
-
-    public void setQuantiteCategorie(int quantiteCategorie) {
-        this.quantiteCategorie = quantiteCategorie;
-    }
-
-    public Timestamp getAdddateCategorie() {
-        return adddateCategorie;
-    }
-
-    public void setAdddateCategorie(Timestamp adddateCategorie) {
-        this.adddateCategorie = adddateCategorie;
-    }
-
-    public Timestamp getUpdatedateCategorie() {
-        return updatedateCategorie;
-    }
-
-    public void setUpdatedateCategorie(Timestamp updatedateCategorie) {
-        this.updatedateCategorie = updatedateCategorie;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 }

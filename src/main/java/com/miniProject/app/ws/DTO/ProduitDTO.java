@@ -1,6 +1,8 @@
 package com.miniProject.app.ws.DTO;
-import java.sql.Timestamp;
+import lombok.Data;
 
+import java.sql.Timestamp;
+@Data
 public class ProduitDTO {
     private Long id;
     private String name;
@@ -21,51 +23,4 @@ public class ProduitDTO {
     public ProduitDTO() {
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getQt() {
-        return qt;
-    }
-
-    public void setQt(int qt) {
-        this.qt = qt;
-    }
-
-    public boolean isDisp() {
-        return disp;
-    }
-
-    public void setDisp(boolean disp) {
-        this.disp = disp;
-    }
-
-    public Timestamp getAjoutdate() {
-        return ajoutdate;
-    }
-
-    public void setAjoutdate(Timestamp ajoutdate) {
-        this.ajoutdate = ajoutdate;
-    }
-
-    public Timestamp getModifdate() {
-        return modifdate;
-    }
-
-    public void setModifdate(Timestamp modifdate) {
-        this.modifdate = modifdate;
-    }
 }

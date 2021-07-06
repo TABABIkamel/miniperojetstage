@@ -4,24 +4,18 @@ import java.util.List;
 
 
 import com.miniProject.app.ws.DTO.CategorieDTO;
+import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+
+import org.springframework.web.bind.annotation.*;
 
 import com.miniProject.app.ws.entities.Categorie;
 import com.miniProject.app.ws.services.ICategorieService;
 @RestController
 @RequestMapping("/Categorie")
-
+@AllArgsConstructor
 public class CategorieController {
 	@Autowired
 	ICategorieService icategorieservice;

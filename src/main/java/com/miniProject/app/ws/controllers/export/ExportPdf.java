@@ -59,7 +59,7 @@ public class ExportPdf {
 				table.addCell(cell);
 
 				
-				cell = new PdfPCell(new Phrase(produit.getQuantite()));
+				cell = new PdfPCell(new Phrase(String.valueOf(produit.getQuantite())));
 				cell.setVerticalAlignment(Element.ALIGN_MIDDLE);
 				cell.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell.setPaddingRight(5);
